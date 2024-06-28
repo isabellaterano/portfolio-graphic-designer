@@ -32,7 +32,7 @@ const images = [
 
 const Work = ({ darkMode }) => {
   return (
-    <section id="work" className="py-10 ">
+    <section id="work" className="py-16 ">
       <h2
         className={`text-center text-lg md:text-xl lg:text-4xl font-bold mb-10 ${
           darkMode ? " text-white" : ""

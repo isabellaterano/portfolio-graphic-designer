@@ -5,6 +5,7 @@ import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import About from "./components/About";
 import Work from "./components/Work";
+import { MdNightlightRound, MdOutlineLightMode } from "react-icons/md";
 
 function App() {
   const [darkMode, setDarkMode] = useState(false);
@@ -14,7 +15,13 @@ function App() {
   };
 
   return (
-    <div className={`App ${darkMode ? "bg-zinc-900" : ""}`}>
+    <div
+      className={` ${
+        darkMode
+          ? "bg-neutral-950 text-neutral-200"
+          : "bg-neutral-200 text-black"
+      }`}
+    >
       <Header darkMode={darkMode} />
       <Hero darkMode={darkMode} />
       <div className="mx-5 md:mx-8 lg:mx-10">
@@ -24,10 +31,14 @@ function App() {
       </div>
       <Footer darkMode={darkMode} />
       <button
-        className="fixed bottom-4 right-4 bg-gray-800 text-white py-2 px-4 rounded-full shadow-lg"
+        className="fixed bottom-4 right-4 bg-gray-800 text-neutral-50 py-2 px-4 rounded-full shadow-lg z-50"
         onClick={toggleDarkMode}
       >
-        {darkMode ? "Light Mode" : "Dark Mode"}
+        {darkMode ? (
+          <MdOutlineLightMode className="text-yellow-500" />
+        ) : (
+          <MdNightlightRound />
+        )}
       </button>
     </div>
   );

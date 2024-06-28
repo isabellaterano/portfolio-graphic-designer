@@ -12,8 +12,8 @@ const Contact = ({ darkMode }) => {
   return (
     <section
       id="contact"
-      className={`py-12 px-6 mb-5 ${
-        darkMode ? " text-zinc-100" : "bg-zinc-100"
+      className={`py-16 px-6 mb-5 ${
+        darkMode ? " text-neutral-100" : "bg-neutral-100"
       }`}
     >
       <div className="container mx-auto text-center">

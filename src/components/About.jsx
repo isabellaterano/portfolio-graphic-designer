@@ -5,7 +5,7 @@ const About = ({ darkMode }) => {
   return (
     <section
       id="about"
-      className={`py-12 px-6 mt-5 ${darkMode ? " text-white" : "bg-gray-100"}`}
+      className={`py-16 px-6 mt-5 ${darkMode ? " text-white" : "bg-gray-100"}`}
     >
       <div className="container mx-auto flex flex-col md:flex-row items-center">
         <motion.div
